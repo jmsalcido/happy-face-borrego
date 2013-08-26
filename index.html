@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Asignacion 12</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css"/>
+		<script src="yo.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Happy-Sad-Poker Face</h1>
+		</div>
+		<div id="content">
+			<canvas id="myCanvas" class="canvas" width="500px" height="400px">You suck.</canvas>
+			<p>Configuraciones:</p>
+			<form id="canvas_controls">
+				<label>Ojo Izquierdo: </label><input id="le" type="range" value="0" min="-10.5" max="3" step="0.5" onchange="drawFace(0,0,this.value,0);"/><input id="leColor" type="color" onchange="drawFace(0,0,0,0);" value="#FFFFFF"/>
+				<br/>
+				<label>Ojo Derecho: </label><input id="re" type="range" value="0" min="-3.5" max="10" step="0.5" onchange="drawFace(0,0,0, this.value);"/><input id="reColor" type="color" onchange="drawFace(0,0,0,0);" value="#FFFFFF"/>
+				<br/>
+				<label>Nariz: </label><input id="nose" type="range" value="0" min="0" max="30" step="1" onchange="drawFace(this.value,0,0,0);" /><input id="noseColor" type="color" onchange="drawFace(0,0,0,0);" value="#000000"/>
+				<br/>
+				<label>Boca: </label><input id="mouth" type="range" value="0" min="0" max="200" step="0.1" onchange="drawFace(0,this.value, 0,0);"/><input id="mouthColor" type="color" onchange="drawFace(0,0,0,0);" value="#000000"/>
+				<br/>
+			</form>
+		</div>
+	</body>
+</html>

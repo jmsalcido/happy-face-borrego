@@ -1,0 +1,72 @@
+body
+{
+	margin: 0;
+	font-family: helvetica;
+}
+
+#header
+{
+	text-align: center;
+	background-color: purple;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 2px
+}
+
+#header h1,h2,h3,h4,h5,h6
+{
+	margin: 0;
+}
+
+#header h1
+{
+	color: white;
+	font-size: 2.5em;
+	font-style: italic;
+	text-shadow: -6px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#content
+{
+	text-align: center;
+}
+
+#content .canvas
+{
+	margin-top: 2%;
+	border: 1px solid black;
+}
+
+#canvas_controls
+{
+	margin-left: 30%;
+}
+
+#canvas_controls label
+{
+	display: block;
+	float: left;
+	width: 150px;
+	text-align: right;
+	margin: 2px 4px 6px 4px;
+}
+
+#canvas_controls input
+{
+	display: block;
+	float: left;
+	margin: 2px 4px 6px 4px;
+}
+
+#canvas_controls select
+{
+	display: block;
+	float: left;
+	margin: 2px 4px 6px 4px;
+}
+
+
+#canvas_controls br
+{
+	clear: left;
+}
